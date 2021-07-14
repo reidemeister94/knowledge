@@ -1,29 +1,27 @@
-> Text version for visually impaired users
-
 # Data Engineer in 2021
 
 * CS fundamentals
-	* Basic terminal usage [general recommendation]
-	* Data structures & algorithms [general recommendation]
-	* APIs [general recommendation]
-	* REST [general recommendation]
-	* Structured vs unstructured data [general recommendation]
+	* Basic terminal usage [general recommendation]	✅
+	* Data structures & algorithms [general recommendation]	✅
+	* APIs [general recommendation] ✅
+	* REST [general recommendation] ✅
+	* Structured vs unstructured data [general recommendation]	✅
 	* Serialisation
-	* Linux [general recommendation]
+	* Linux [general recommendation] ✅
 		* CLI
 		* Vim
 		* Shell scripting
 		* Cronjobs
-	* How does the computer work? [general recommendation]
-	* How does the Internet work? [general recommendation]
-	* Git — Version control [general recommendation]
-	* Math & statistics basics [general recommendation]
+	* How does the computer work? [general recommendation] ✅
+	* How does the Internet work? [general recommendation] ✅
+	* Git — Version control [general recommendation]	   ✅
+	* Math & statistics basics [general recommendation]	   ✅
 
 *Note: Git is used for tracking changes in source code and coordinating work among programmers. In your day to day work you will use Git server as a service like GitHub, GitLab or Bitbucket.*
 
 * Learn a programming language
-	* Python [personal recommendation]
-	* Java [general recommendation]
+	* Python [personal recommendation] ✅
+	* Java [general recommendation]	   ✅
 	* Scala
 	* Go
 
@@ -35,23 +33,23 @@
 	* Functional testing [general recommendation]
 
 * Database fundamentals
-	* SQL [general recommendation]
+	* SQL [general recommendation]	✅
 	* Normalisation [general recommendation]
 	* ACID transactions [general recommendation]
 	* CAP theorem [general recommendation]
 	* OLTP vs OLAP [general recommendation]
-	* Horizontal vs vertical scaling [general recommendation]
+	* Horizontal vs vertical scaling [general recommendation] ✅
 	* Dimensional modeling [general recommendation]
 
 * Relational databases
-	* MySQL [general recommendation]
-	* PostgreSQL [general recommendation]
+	* MySQL [general recommendation]		✅
+	* PostgreSQL [general recommendation]	✅
 	* MariaDB
 	* Amazon Aurora
 
 * Non-relational databases
 	* Document databases
-		* MongoDB [general recommendation]
+		* MongoDB [general recommendation]			✅
 		* Elasticsearch [general recommendation]
 		* Apache CouchDB
 		* Azure CormosDB
@@ -60,17 +58,17 @@
 		* Apache HBase [general recommendation]
 		* Google Cloud Bigtable [personal recommendation]
 	* Graph databases
-		* Neo4j
+		* Neo4j		✅
 		* Amazon Neptune
 	* Key-value stores
-		* Redis [personal recommendation]
+		* Redis [personal recommendation]	✅
 		* Memcached
 		* Amazon DynamoDB [general recommendation]
 
 *Note: Understand the difference between Document, Wide column, Graph and Key-value NoSQL databases. We recommend mastering one database from each category.*
 
 * Data warehouses
-	* Snowflake [general recommendation]
+	* Snowflake [general recommendation]	✅
 	* Presto
 	* Apache Hive
 	* Apache Impala
@@ -80,15 +78,15 @@
 	* ClickHouse
 
 * Object storage
-	* AWS S3 [general recommendation]
+	* AWS S3 [general recommendation]	✅
 	* Azure Blob Storage
-	* Google Cloud Storage
+	* Google Cloud Storage				✅
 	* Apache Ozone
 
 * Cluster computing fundamentals
 	* Apache Hadoop [general recommendation]
 	* HDFS [general recommendation]
-	* MapReduce [general recommendation]
+	* MapReduce [general recommendation]	✅
 	* Lambda & Kappa architectures
 	* Managed Hadoop [general recommendation]
 		* Amazon EMR
@@ -119,7 +117,7 @@
 	* RabbitMQ [general recommendation]
 	* Apache ActiveMQ
 	* Amazon SNS & SQS
-	* Google PubSub
+	* Google PubSub		✅
 	* Azure Service Bus
 
 * Workflow scheduling
@@ -139,23 +137,23 @@
 	* Soda Data
 	* StatsD
 
-* Networking
-	* Protocols [general recommendation]
+* Networking 								
+	* Protocols [general recommendation]	✅
 		* HTTP / HTTPS
 		* TCP
 		* SSH
 		* IP
 		* DNS
-	* Firewalls [general recommendation]
-	* VPN [general recommendation]
-	* VPC [general recommendation]
+	* Firewalls [general recommendation]	✅
+	* VPN [general recommendation]			✅
+	* VPC [general recommendation]			✅
 
 * Infrastructure as Code
 	* Containers
-		* Docker [personal recommendation]
+		* Docker [personal recommendation]	✅
 		* LXC
 	* Container orchestration
-		* Kubernetes [general recommendation]
+		* Kubernetes [general recommendation]	✅
 		* Docker Swarm
 		* Apache Mesos
 		* Google Kubernetes Engine (GKE) [general recommendation]
