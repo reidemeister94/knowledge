@@ -1,6 +1,14 @@
-def sort(array=[12,4,5,6,7,3,1,15]):
-    """Sort the array by using quicksort."""
+"""
+Time:
+	Best:  O(n log(n))
+	Avg:   O(n log(n))
+	Worst: O(n^2)
+Space:
+		   O(log(n))
+"""
 
+
+def quick_sort(array=[12, 4, 5, 6, 7, 3, 1, 15]):
     less = []
     equal = []
     greater = []
@@ -15,10 +23,12 @@ def sort(array=[12,4,5,6,7,3,1,15]):
             elif x > pivot:
                 greater.append(x)
         # Don't forget to return something!
-        return sort(less)+equal+sort(greater)  # Just use the + operator to join lists
+        return (
+            quick_sort(less) + equal + quick_sort(greater)
+        )  # Just use the + operator to join lists
     # Note that you want equal ^^^^^ not pivot
     else:  # You need to handle the part at the end of the recursion - when you only have one element in your array, just return the array.
         return array
 
 
-print(sort())
+print(quick_sort())
