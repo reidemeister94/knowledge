@@ -41,8 +41,8 @@ feelings and not reality, helping the thinking brain come back online
 
 determine how to take a step forward
 
-- http://www.jeffwofford.com/?p=838
-- http://programmer.97things.oreilly.com/wiki/index.php/Don%27t_Stay_Stuck
+- <a href="http://www.jeffwofford.com/?p=838">http://www.jeffwofford.com/?p=838</a>
+- <a href="http://programmer.97things.oreilly.com/wiki/index.php/Don%27t_Stay_Stuck">http://programmer.97things.oreilly.com/wiki/index.php/Don%27t_Stay_Stuck</a>
 
 I like to sometimes talk to the problem, aloud if possible (see [rubber
 ducking](https://en.wikipedia.org/wiki/Rubber_duck_debugging)), to help me
