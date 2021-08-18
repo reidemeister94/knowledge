@@ -1,10 +1,10 @@
 """
 Time:
-	Best:  O(n log(n))
-	Avg:   O(n log(n))
-	Worst: O(n^2)
+    Best:  O(n log(n))
+    Avg:   O(n log(n))
+    Worst: O(n^2)
 Space:
-		   O(log(n))
+           O(log(n))
 """
 
 
@@ -22,7 +22,6 @@ def quick_sort(array=[12, 4, 5, 6, 7, 3, 1, 15]):
                 equal.append(x)
             elif x > pivot:
                 greater.append(x)
-        # Don't forget to return something!
         return (
             quick_sort(less) + equal + quick_sort(greater)
         )  # Just use the + operator to join lists
