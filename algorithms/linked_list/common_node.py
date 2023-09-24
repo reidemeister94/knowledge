@@ -18,9 +18,9 @@
 	}
 """
 
+
 # Function to find intersection point in Y shaped Linked Lists.
 def intersect_point(head1, head2):
-
     new_head_1 = reverse_list(head1)
     new_head_2 = reverse_list(head2)
 

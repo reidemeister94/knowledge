@@ -22,21 +22,28 @@ n == board[i].length
 1 <= m, n <= 200
 board[i][j] is 'X' or 'O'.
 """
+from typing import List
+
+
 class Solution:
     def bfs(self, row, col):
         queue = [[row, col]]
 
         while queue:
             r, c = queue.pop()
-            if self.new_board[r][c] == '-1':
+            if self.new_board[r][c] == "-1":
                 continue
 
             for i, j in [[-1, 0], [0, 1], [1, 0], [0, -1]]:
                 new_r, new_c = r + i, c + j
-                if 0 <= new_r < self.n_rows and 0 <= new_c < self.n_cols and self.new_board[new_r][new_c] == 'O':
+                if (
+                    0 <= new_r < self.n_rows
+                    and 0 <= new_c < self.n_cols
+                    and self.new_board[new_r][new_c] == "O"
+                ):
                     queue.append([new_r, new_c])
 
-            self.new_board[r][c] = '-1'
+            self.new_board[r][c] = "-1"
 
     def solve(self, board: List[List[str]]) -> None:
         """

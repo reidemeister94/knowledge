@@ -18,9 +18,11 @@ n == grid[i].length
 1 <= m, n <= 50
 grid[i][j] is either 0 or 1.
 """
+
+
 class Solution:
     def bfs(self, row, col):
-        queue = [[row,col]]
+        queue = [[row, col]]
         area = 0
 
         while queue:
@@ -28,10 +30,10 @@ class Solution:
             if self.grid[curr_row][curr_col] == -1:
                 continue
             area += 1
-            for inc_r, inc_c in [[-1,0],[0,1],[1,0],[0,-1]]:
-                r,c = curr_row + inc_r, curr_col + inc_c
-                if  0 <= r < self.rows and 0 <= c < self.cols and self.grid[r][c] == 1:
-                    queue.append([r,c])
+            for inc_r, inc_c in [[-1, 0], [0, 1], [1, 0], [0, -1]]:
+                r, c = curr_row + inc_r, curr_col + inc_c
+                if 0 <= r < self.rows and 0 <= c < self.cols and self.grid[r][c] == 1:
+                    queue.append([r, c])
             self.grid[curr_row][curr_col] = -1
         return area
 
@@ -44,6 +46,6 @@ class Solution:
         for i in range(len(self.grid)):
             for j in range(len(self.grid[0])):
                 if self.grid[i][j] == 1:
-                    max_area = max(max_area, self.bfs(i,j))
+                    max_area = max(max_area, self.bfs(i, j))
 
         return max_area
