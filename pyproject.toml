@@ -1,0 +1,7 @@
+[tool.black]
+line-length = 100
+target-version = ['py310', 'py311']
+experimental_string_processing = true
+
+[tool.ruff]
+line-length = 100
