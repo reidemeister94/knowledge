@@ -64,3 +64,38 @@ class Solution:
             output.append(self.find_leaves(root, leaves=[]))
         output.append([root.val])
         return output
+
+
+"""Solution with dfs"""
+
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class SolutionDFS:
+    def dfs(self, node: Optional[TreeNode]) -> int:
+        if not node:
+            return -1
+
+        left = self.dfs(node.left)
+        right = self.dfs(node.right)
+
+        level = max(left, right) + 1
+        if level >= len(self.leaves):
+            self.leaves.append([])
+
+        self.leaves[level].append(node.val)
+
+        return level
+
+    def findLeaves(self, root: Optional[TreeNode]) -> List[List[int]]:
+        if not root:
+            return []
+        self.leaves = [[]]
+
+        self.dfs(root)
+
+        return self.leaves
