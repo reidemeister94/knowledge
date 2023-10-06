@@ -19,9 +19,7 @@ def routePairs(maxTravelDist, forwardRouteList, returnRouteList):
             else:
                 idx_right = idx_mid
             print(forwardRouteList[idx_left - 1][1])
-        current_difference = maxTravelDist - (
-            distance_return + forwardRouteList[idx_left - 1][1]
-        )
+        current_difference = maxTravelDist - (distance_return + forwardRouteList[idx_left - 1][1])
         if current_difference < min_diff and current_difference > 0:
             min_diff = current_difference
             valid_pairs = [[forwardRouteList[idx_left - 1][0], id_route_return]]
