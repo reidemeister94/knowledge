@@ -96,3 +96,37 @@ class Solution:
             current = current.next
 
         return new_list[0]
+
+
+# Approach 2: O(1) space
+class Solution2:
+    def copyRandomList(self, head: "Optional[Node]") -> "Optional[Node]":
+        if not head:
+            return None
+
+        # Step 1: Interweaving original and copied nodes
+        current = head
+        while current:
+            new_node = Node(current.val, current.next)
+            current.next = new_node
+            current = new_node.next
+
+        # Step 2: Assigning random pointers to the new nodes
+        current = head
+        while current:
+            if current.random:
+                current.next.random = current.random.next
+            current = current.next.next
+
+        # Step 3: Restoring the original list and separating the copied list
+        current = head
+        new_head = head.next
+        while current:
+            temp = current.next
+            current.next = temp.next
+            current = current.next
+            if temp.next:
+                temp.next = temp.next.next
+            temp = temp.next
+
+        return new_head
