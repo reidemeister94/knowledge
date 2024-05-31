@@ -27,6 +27,7 @@ Constraints:
 The number of nodes in the tree is in the range [1, 100].
 -100 <= Node.val <= 100
 """
+
 from typing import Optional, List
 
 

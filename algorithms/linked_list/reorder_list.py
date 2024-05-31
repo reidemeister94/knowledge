@@ -31,6 +31,7 @@ Constraints:
 The number of nodes in the list is in the range [1, 5 * 104].
 1 <= Node.val <= 1000
 """
+
 from typing import Optional
 
 

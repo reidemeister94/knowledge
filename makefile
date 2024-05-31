@@ -1,15 +1,14 @@
 COMMIT_MSG_HOOK = '\#!/bin/bash\nMSG_FILE=$$1\ncz check --allow-abort --commit-msg-file $$MSG_FILE'
 
-
-install-pip-tools:
+install-uv:
 	pip install --upgrade pip
-	pip install --upgrade pip-tools
+	pip install --upgrade uv
 
-requirements.txt: requirements.in install-pip-tools
-	pip-compile --upgrade --resolver backtracking --output-file=$@ requirements.in
+requirements.txt: requirements.in install-uv
+	uv pip compile --upgrade requirements.in -o $@
 
 install: requirements.txt
-	pip install -r requirements.txt
+	uv pip install -r requirements.txt
 	pre-commit install
 	echo $(COMMIT_MSG_HOOK) > .git/hooks/commit-msg
 	chmod +x .git/hooks/commit-msg

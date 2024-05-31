@@ -21,6 +21,7 @@ For the example above, the friend groups would be {0, 1, 2, 5}, {3, 6}, {4}.
 
 Given a friendship list such as the one above, determine the number of friend groups in the class.
 """
+
 from typing import Dict, List, Set, Tuple
 
 

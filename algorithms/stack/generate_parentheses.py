@@ -21,6 +21,7 @@ Constraints:
 
 1 <= n <= 8
 """
+
 from typing import List
 
 
