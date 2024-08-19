@@ -4,7 +4,7 @@ fail_fast: true
 
 repos:
     - repo: https://github.com/commitizen-tools/commitizen
-      rev: v3.27.0
+      rev: v3.29.0
       hooks:
           - id: commitizen
             stages: [commit-msg]
@@ -19,11 +19,11 @@ repos:
           - id: check-merge-conflict
 
     - repo: https://github.com/psf/black
-      rev: 24.4.2
+      rev: 24.8.0
       hooks:
           - id: black
 
     - repo: https://github.com/charliermarsh/ruff-pre-commit
-      rev: 'v0.4.6'
+      rev: 'v0.6.1'
       hooks:
           - id: ruff
